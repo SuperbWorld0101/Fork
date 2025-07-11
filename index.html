@@ -6,6 +6,104 @@
   <title>Fork – Smart Meal Planner</title>
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: #f9fafb;
+      color: #333;
+    }
+
+    .landing {
+      background: linear-gradient(135deg, #a2d4ab, #f6f6f6);
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .landing-content h1 {
+      font-size: 4rem;
+      margin-bottom: 1rem;
+      color: #2d6a4f;
+    }
+
+    .landing-content p {
+      font-size: 1.25rem;
+      margin-bottom: 2rem;
+    }
+
+    .start-btn {
+      padding: 12px 24px;
+      background-color: #40916c;
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: background 0.3s ease;
+    }
+
+    .start-btn:hover {
+      background-color: #2d6a4f;
+    }
+
+    .planner-section {
+      padding: 40px 20px;
+      background: #ffffff;
+      text-align: center;
+    }
+
+    .planner-section h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      max-width: 400px;
+      margin: 0 auto;
+    }
+
+    input, select, button {
+      width: 100%;
+      padding: 10px;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+
+    button {
+      background-color: #52b788;
+      color: white;
+      font-weight: bold;
+      border: none;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #40916c;
+    }
+
+    .meal-plan, .grocery-list, .actions {
+      padding: 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .meal-card {
+      background: white;
+      border: 1px solid #ddd;
+      padding: 16px;
+      border-radius: 8px;
+      margin-bottom: 16px;
+    }
+  </style>
 </head>
 <body>
   <section class="landing">
@@ -42,5 +140,3 @@
   <script src="script.js"></script>
 </body>
 </html>
-
-
