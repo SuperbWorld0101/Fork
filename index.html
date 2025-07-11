@@ -2,26 +2,30 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Fork - Smart Meal Planner</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fork – Smart Meal Planner</title>
   <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
 </head>
 <body>
-  <header>
-    <h1>Fork - Personalized Meal Planner</h1>
-  </header>
+  <section class="landing">
+    <div class="landing-content">
+      <h1>Fork</h1>
+      <p>Eat smarter. Plan faster. Live better.</p>
+      <a href="#planner" class="start-btn">Start Planning</a>
+    </div>
+  </section>
 
-  <section class="preferences">
+  <section id="planner" class="planner-section">
+    <h2>Personalize Your Meal Plan</h2>
     <form id="preferences-form">
-      <label>Calories per Day: <input type="number" name="calories" required /></label>
-      <label>Diet:
-        <select name="diet">
-          <option value="balanced">Balanced</option>
-          <option value="vegetarian">Vegetarian</option>
-          <option value="keto">Keto</option>
-        </select>
-      </label>
-      <label>Allergies: <input type="text" name="allergies" placeholder="e.g. peanuts, dairy" /></label>
+      <input type="number" name="calories" placeholder="Target Calories (e.g., 1800)" required />
+      <select name="diet">
+        <option value="balanced">Balanced</option>
+        <option value="vegetarian">Vegetarian</option>
+        <option value="keto">Keto</option>
+      </select>
+      <input type="text" name="allergies" placeholder="Allergies (comma-separated)" />
       <button type="submit">Generate Plan</button>
     </form>
   </section>
@@ -38,4 +42,5 @@
   <script src="script.js"></script>
 </body>
 </html>
+
 
